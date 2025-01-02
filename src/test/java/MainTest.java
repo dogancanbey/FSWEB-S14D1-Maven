@@ -13,6 +13,7 @@ import java.lang.reflect.Field;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @ExtendWith(ResultAnalyzer.class)
@@ -114,7 +115,7 @@ public class MainTest {
     @Test
     public void testCuboidTypes() throws NoSuchFieldException {
         assertThat(cuboid, instanceOf(Rectangle.class));
-        assertThat(cuboid.getHeight(), instanceOf(Number.class));
+        assertThat(cuboid.getLength(), instanceOf(Number.class));
     }
 
     @DisplayName("getVolume methodu Cuboid sınıfında doğru çalışıyor mu?")
