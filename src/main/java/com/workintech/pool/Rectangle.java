@@ -21,4 +21,13 @@ public class Rectangle {
     public double getArea(){
         return this.width*this.length;
     }
+
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                '}';
+    }
 }
